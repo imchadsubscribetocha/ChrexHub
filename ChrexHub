@@ -3073,12 +3073,6 @@ loadstring(game:HttpGet('https://pastebin.com/raw/qbexdLb3'))()
     end
 end)
 
-spawn(function()
-local message = Instance.new("Message",workspace)
-message.Text = "GUI MADE BY XXXTENTACION#6666"
-wait(11)
-message:Destroy()
-end)
 
 elseif game.PlaceId == 1554960397 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
