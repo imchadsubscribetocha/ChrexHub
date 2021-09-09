@@ -4206,6 +4206,15 @@ end
     end
 end)
 
+MainSection:NewToggle("Car dealership autofarm", "Autofarm", function(state)
+    if state then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
 spawn(function()
 local message = Instance.new("Message",workspace)
 message.Text = "GUI MADE BY XXXTENTACION#6666"
