@@ -4205,8 +4205,7 @@ end
         print("Toggle Off")
     end
 end)
-
-MainSection:NewToggle("Infinite Yeild", "Infinite yeild", function(state)
+MainSection:NewToggle("infinite yeild", "infiniteyeild", function(state)
     if state then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
         print("Toggle On")
