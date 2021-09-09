@@ -4206,7 +4206,7 @@ end
     end
 end)
 
-MainSection:NewToggle("Car dealership autofarm", "Autofarm", function(state)
+MainSection:NewToggle("Infinite yeild", "Infinite yeild", function(state)
     if state then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
         print("Toggle On")
