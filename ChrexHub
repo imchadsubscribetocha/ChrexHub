@@ -3075,7 +3075,7 @@ end)
 
 spawn(function()
 local message = Instance.new("Message",workspace)
-message.Text = "GUI MADE BY XXXTENTACION#6666"
+message.Text = "GUI MADE BY XXXTENTACION#9897"
 wait(11)
 message:Destroy()
 end)
@@ -4205,9 +4205,25 @@ end
         print("Toggle Off")
     end
 end)
-MainSection:NewToggle("infinite yeild", "infiniteyeild", function(state)
+
+spawn(function()
+local message = Instance.new("Message",workspace)
+message.Text = "GUI MADE BY XXXTENTACION#9897"
+wait(11)
+message:Destroy()
+end)
+
+elseif game.PlaceId == 6284583030 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Chrex Hub Fencing", "Sentinel")
+    
+        -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+    
+    MainSection:NewToggle("CLICK HERE FOR THE GUI", "CLICK!", function(state)
     if state then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/imchadsubscribetocha/ChrexHubPetsimX/main/ChrexHubPetsimX'))()
         print("Toggle On")
     else
         print("Toggle Off")
@@ -4216,7 +4232,7 @@ end)
 
 spawn(function()
 local message = Instance.new("Message",workspace)
-message.Text = "GUI MADE BY XXXTENTACION#6666"
+message.Text = "GUI MADE BY XXXTENTACION#9897"
 wait(11)
 message:Destroy()
 end)
