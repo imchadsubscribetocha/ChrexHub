@@ -4215,7 +4215,7 @@ end)
 
 elseif game.PlaceId == 6284583030 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Chrex Hub Fencing", "Sentinel")
+    local Window = Library.CreateLib("Chrex Hub Pet Sim X", "Sentinel")
     
         -- MAIN
     local Main = Window:NewTab("Main")
@@ -4311,5 +4311,53 @@ local message = Instance.new("Message",workspace)
 message.Text = "GUI MADE BY XXXTENTACION#9897"
 wait(11)
 message:Destroy()
+end)
+
+elseif game.PlaceId == 7541759836 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Chrex Hub LOUBU#1", "Sentinel")
+ 
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+
+    -- PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+ 
+    PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end)
+ 
+    PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
+
+
+MainSection:NewToggle("Autofarm (farm will be looped)", function(state)
+    if state then
+_G.AutoFarm = true -- true = On false = Off
+while _G.AutoFarm == true do
+    local args = {[1] = 2,[2] = {[1] = 1,[2] = 1,[3] = 16}}
+    game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent:FireServer(unpack(args))
+    wait()
+    local args = {[1] = 2,[2] = {[1] = 2,[2] = 1}}
+    game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent:FireServer(unpack(args))
+    wait()
+    local args = {[1] = 2,[2] = {[1] = 2,[2] = 2}}
+    game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent:FireServer(unpack(args))
+    wait()
+    local args = {[1] = 2,[2] = {[1] = 2,[2] = 3}}
+    game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent:FireServer(unpack(args))
+    wait()
+    local args = {[1] = 2,[2] = {[1] = 2,[2] = 4}}
+    game:GetService("ReplicatedStorage").Project.RemoteEvent.ControlMessageEvent:FireServer(unpack(args))
+    wait()
+end
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
 end)
 end
